@@ -9,3 +9,15 @@ springdoc:
     tags-sorter: alpha
     operations-sorter: method
     display-request-duration: true
+
+scalar:
+  enabled: true
+  path: /scalar
+  sources:
+    - url: /v3/api-docs/public-api
+      title: Public API
+      slug: public
+      isDefault: true
+    - url: /v3/api-docs/admin-api
+      title: Admin API
+      slug: admin
